@@ -1,0 +1,91 @@
+[ {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#2D_puzzle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Game"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Finding_hidden_objects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Game"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Finding_semi-transparent_objects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Game"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Game",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Game_Level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Gamer_Related_Information",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Gamig_Results",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Memory_game_with_equal_images",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Game"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Playing_Style",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Shooting_objects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Game"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Word_soup_puzzle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Game"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#game_learning_goals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Game"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#hasResults",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Gamer_Related_Information"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Gamig_Results"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#playing_time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Gamig_Results"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#reached_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Gamig_Results"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Game_Level"
+  } ]
+} ]

@@ -1,0 +1,241 @@
+[ {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Academic_Background_Information",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Academic_Information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Academic_Information",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Learner_Related_Information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Advanced",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Knowledge_level"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Auditory_Learner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Learning_style"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Beginner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Knowledge_level"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Demographics_Personal_Information",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Personal_Information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Direct__Measures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Learning_Experience_Information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Expert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Knowledge_level"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#IP_ID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Private_Personal_Information"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Indirect_Measures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Learning_Experience_Information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Intermediate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Knowledge_level"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Kinesthetic_Learner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Learning_style"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Knowledge_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#LMS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Learner_Related_Information",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Learning_Experience_Information",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Academic_Information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Learning_style",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Personal_Information",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Learner_Related_Information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Private_Personal_Information",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Personal_Information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#ReadingWriting_Learner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Learning_style"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Training",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Visual_Learner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Learning_style"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Zero_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Knowledge_level"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#educational_organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Training"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#ethnicity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Demographics_Personal_Information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#grade",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Training"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#hasKnowledge_level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Training"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Knowledge_level"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#hasLearning_style",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Academic_Background_Information"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Learning_style"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#hasSystemAccount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Private_Personal_Information"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#LMS"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#hasTraining",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Academic_Background_Information"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Training"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Demographics_Personal_Information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#marital_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#student_ID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Private_Personal_Information"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Training"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Demographics_Personal_Information"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Demographics_Personal_Information"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/img",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox_sha1sum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Private_Personal_Information"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#Private_Personal_Information"
+  } ]
+} ]

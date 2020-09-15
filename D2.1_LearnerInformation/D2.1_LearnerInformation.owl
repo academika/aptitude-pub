@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2020/8/untitled-ontology-55#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="#ethnicity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zero_level"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visual_Learner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasKnowledge_level"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLearning_style"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#educational_organization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTraining"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge_level"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#grade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Academic_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indirect_Measures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Auditory_Learner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#marital_status"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSystemAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intermediate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Learning_Experience_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Private_Personal_Information"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Demographics_Personal_Information"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Academic_Background_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReadingWriting_Learner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beginner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kinesthetic_Learner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Advanced"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LMS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IP_ID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Direct__Measures"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/mbox_sha1sum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Learner_Related_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Learning_style"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personal_Information"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/img"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#student_ID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Training"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Academic_Background_Information"/>
+        <Class IRI="#Academic_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Academic_Information"/>
+        <Class IRI="#Learner_Related_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Advanced"/>
+        <Class IRI="#Knowledge_level"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Auditory_Learner"/>
+        <Class IRI="#Learning_style"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beginner"/>
+        <Class IRI="#Knowledge_level"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demographics_Personal_Information"/>
+        <Class IRI="#Personal_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Direct__Measures"/>
+        <Class IRI="#Learning_Experience_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expert"/>
+        <Class IRI="#Knowledge_level"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indirect_Measures"/>
+        <Class IRI="#Learning_Experience_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intermediate"/>
+        <Class IRI="#Knowledge_level"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kinesthetic_Learner"/>
+        <Class IRI="#Learning_style"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Learning_Experience_Information"/>
+        <Class IRI="#Academic_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personal_Information"/>
+        <Class IRI="#Learner_Related_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Private_Personal_Information"/>
+        <Class IRI="#Personal_Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReadingWriting_Learner"/>
+        <Class IRI="#Learning_style"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visual_Learner"/>
+        <Class IRI="#Learning_style"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zero_level"/>
+        <Class IRI="#Knowledge_level"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLearning_style"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ethnicity"/>
+        <Class IRI="#Demographics_Personal_Information"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasKnowledge_level"/>
+        <Class IRI="#Training"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLearning_style"/>
+        <Class IRI="#Academic_Background_Information"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSystemAccount"/>
+        <Class IRI="#Private_Personal_Information"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTraining"/>
+        <Class IRI="#Academic_Background_Information"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#location"/>
+        <Class IRI="#Demographics_Personal_Information"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/gender"/>
+        <Class IRI="#Demographics_Personal_Information"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasKnowledge_level"/>
+        <Class IRI="#Knowledge_level"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLearning_style"/>
+        <Class IRI="#Learning_style"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSystemAccount"/>
+        <Class IRI="#LMS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTraining"/>
+        <Class IRI="#Training"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#educational_organization"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IP_ID"/>
+        <Class IRI="#Private_Personal_Information"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#educational_organization"/>
+        <Class IRI="#Training"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#grade"/>
+        <Class IRI="#Training"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#student_ID"/>
+        <Class IRI="#Private_Personal_Information"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#subject"/>
+        <Class IRI="#Training"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/age"/>
+        <Class IRI="#Demographics_Personal_Information"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/mbox_sha1sum"/>
+        <Class IRI="#Private_Personal_Information"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <Class IRI="#Private_Personal_Information"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#IP_ID"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#grade"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
