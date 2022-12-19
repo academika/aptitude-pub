@@ -1,0 +1,50 @@
+# Standard import statements
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+# Domain imports
+@prefix aptitude: <http://aptitude.semweb.ws/ontologies/Education.owl#> .
+@prefix moodle: <http://www.moodle.com/ontology#> .
+
+#[rule1: -> (aptitude:resourceType rdfs:subPropertyOf rdf:type)]
+ 
+[ rule2: (?person aptitude:hasUserName "chris.hardy") <- (?person aptitude:hasPerformance aptitude:Average)  ]
+[ rule4: (?person aptitude:hasAverageGrade ?grade) greaterThan(?grade, "9.00001"^^xsd:float ) -> (?person rdf:type aptitude:ExcellentStudent)  ]
+[ rule5: (?person aptitude:hasAverageGrade ?grade) greaterThan(?grade, "7.00000"^^xsd:float ) lessThan (?grade, "9.00001"^^xsd:float ) -> (?person rdf:type aptitude:AverageStudent)  ]
+[ rule5: (?person aptitude:hasAverageGrade ?grade)  lessThan (?grade, "7.00000"^^xsd:float ) -> (?person rdf:type aptitude:PoorStudent)  ]
+
+[ rule7: (?t rdf:subject ?student) (?t rdf:predicate aptitude:hasGrade) (?t rdf:object ?grade) (?t aptitude:gradeIn ?activity) 
+(?activity aptitude:relatedCourse ?course) greaterThan(?grade, "9.00001"^^xsd:float ), makeSkolem(?p, ?student,?course)
+-> (?p rdf:type rdf:Statement),(?p rdf:subject ?student) ,(?p rdf:predicate aptitude:hasCoursePerformance) ,(?p rdf:object aptitude:Excellent), 
+(?p aptitude:relatedCourse ?course) ]
+
+[ rule8: (?t rdf:subject ?student) (?t rdf:predicate aptitude:hasGrade) (?t rdf:object ?grade) (?t aptitude:gradeIn ?activity) 
+(?activity aptitude:relatedCourse ?course) greaterThan(?grade, "7.00000"^^xsd:float ) lessThan (?grade, "9.00001"^^xsd:float ), makeSkolem(?p, ?student,?course)
+-> (?p rdf:type rdf:Statement), (?p rdf:subject ?student) ,(?p rdf:predicate aptitude:hasCoursePerformance) ,(?p rdf:object aptitude:Average), 
+(?p aptitude:relatedCourse ?course) ]
+
+[ rule9: (?t rdf:subject ?student) (?t rdf:predicate aptitude:hasGrade) (?t rdf:object ?grade) (?t aptitude:gradeIn ?activity) 
+(?activity aptitude:relatedCourse ?course) lessThan (?grade, "7.00000"^^xsd:float ), makeSkolem(?p, ?student,?course)
+-> (?p rdf:type rdf:Statement), (?p rdf:subject ?student) ,(?p rdf:predicate aptitude:hasCoursePerformance) ,(?p rdf:object aptitude:Poor), 
+(?p aptitude:relatedCourse ?course) 
+(?student aptitude:hasFailedExam ?course)
+]
+
+[ rule10:
+(?p rdf:type rdf:Statement), (?p rdf:subject ?student) ,(?p rdf:predicate aptitude:hasCoursePerformance) ,(?p aptitude:relatedCourse ?course)
+noValue(?p rdf:object aptitude:Excellent) 
+noValue(?p aptitude:gradeIn ?activity) (?activity aptitude:relatedCourse ?course) (?activity rdf:type aptitude:Quiz)
+-> 
+(?student aptitude:shouldTakeActivity ?activity)
+]
+
+[ rule11:
+(?p rdf:type rdf:Statement), (?p rdf:subject ?student) ,(?p rdf:predicate aptitude:hasCoursePerformance) ,(?p aptitude:relatedCourse ?course)
+noValue(?p rdf:object aptitude:Excellent) 
+noValue(?p aptitude:hasViewedResource ?resource) (?resource aptitude:relatedCourse ?course) (?resource aptitude:resourceType ?type)
+-> 
+(?student aptitude:shouldViewResource ?resource)
+]

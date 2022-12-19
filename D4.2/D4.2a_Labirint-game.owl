@@ -1,0 +1,1037 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#"
+     xml:base="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasCharacter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isCharacterOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasDifficulty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasDifficulty">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isDifficultyOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasShape">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isShapeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasTrap -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasTrap">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isTrapOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isCharacterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isCharacterOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isDifficultyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isDifficultyOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isShapeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isShapeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shape"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isTrapOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isTrapOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#killable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#killable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#recommendedStars -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#recommendedStars">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#time">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#trapCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#trapCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Ambush -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Ambush">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ArcAxe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ArcAxe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Wall"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Cartographer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Cartographer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Character"/>
+        <rdfs:comment>Using this character will open you a map to save your recent movings</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Character">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Defuser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Defuser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Character"/>
+        <rdfs:comment>Using this character will let you defuse 2 traps on every map</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#time"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#trapCount"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Easy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Easy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasTrap"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#FallingRocks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#FallingRocks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Wall"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GhostAmbush -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GhostAmbush">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Ambush"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GodLike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GodLike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasTrap"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">16</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Ground -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Ground">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Hard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Hard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasTrap"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">8</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Hexagon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Hexagon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasCharacter"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Character"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasDifficulty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasShape"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shape"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#LavaPit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#LavaPit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Ground"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasTrap"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#OrcAmbush -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#OrcAmbush">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Ambush"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#QuickSands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#QuickSands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Ground"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Rectangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Rectangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Round -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Round">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shape"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shuriken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shuriken">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Wall"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SkeletonAmbush -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SkeletonAmbush">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Ambush"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SleepGass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SleepGass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Wall"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SnakePit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SnakePit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Ground"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#TimeRewinder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#TimeRewinder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Character"/>
+        <rdfs:comment>Using this character will double your time on the map</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Triangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Triangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Wall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Wall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Adventurer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Adventurer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Cartographer"/>
+        <hasName>Indiana Jones</hasName>
+        <recommendedStars rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</recommendedStars>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Adventurer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Adventurer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Cartographer"/>
+        <hasName>John Doe</hasName>
+        <recommendedStars rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</recommendedStars>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Easy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Easy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Easy"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush1"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall3"/>
+        <time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GodLike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GodLike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GodLike"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush10"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush11"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush12"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush7"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush8"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush9"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground10"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground11"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground7"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground8"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground9"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall5"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall6"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall7"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall8"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Hard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Hard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Hard"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush4"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush5"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush6"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground4"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground5"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground6"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall1"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall4"/>
+        <time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Adventurer"/>
+        <hasDifficulty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Easy"/>
+        <hasShape rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#shape1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Mage"/>
+        <hasDifficulty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Medium"/>
+        <hasShape rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#shape2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Policeman"/>
+        <hasDifficulty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Hard"/>
+        <hasShape rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#shape3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth"/>
+        <hasDifficulty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GodLike"/>
+        <hasShape rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#shape4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Mage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Mage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#TimeRewinder"/>
+        <hasName>Gandalf</hasName>
+        <recommendedStars rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</recommendedStars>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Medium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Medium"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush2"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush3"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground1"/>
+        <hasTrap rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall2"/>
+        <time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Policeman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Policeman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Defuser"/>
+        <hasName>Johny Cage</hasName>
+        <recommendedStars rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</recommendedStars>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GhostAmbush"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GhostAmbush"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GhostAmbush"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SkeletonAmbush"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#OrcAmbush"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SkeletonAmbush"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GhostAmbush"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#OrcAmbush"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SkeletonAmbush"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#OrcAmbush"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SkeletonAmbush"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ambush9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GhostAmbush"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#LavaPit"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#LavaPit"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#QuickSands"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#QuickSands"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SnakePit"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#LavaPit"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SnakePit"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#QuickSands"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#LavaPit"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#LavaPit"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ground9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SnakePit"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#shape1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#shape1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Hexagon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#shape2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#shape2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Rectangle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#shape3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#shape3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Round"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#shape4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#shape4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Triangle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ArcAxe"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#FallingRocks"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shuriken"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SleepGass"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ArcAxe"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#FallingRocks"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shuriken"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SleepGass"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#wall9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shuriken"/>
+        <killable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</killable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Ambush"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Ground"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Wall"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#ArcAxe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#FallingRocks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shuriken"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SleepGass"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Cartographer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Defuser"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#TimeRewinder"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Character"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Difficulty"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Labyrinth"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Shape"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Traps"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Easy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GodLike"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Hard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Medium"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#GhostAmbush"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#OrcAmbush"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SkeletonAmbush"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Hexagon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Rectangle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Round"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Triangle"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#LavaPit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#QuickSands"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#SnakePit"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

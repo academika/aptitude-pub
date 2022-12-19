@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aptitude/ontologies/2021/0/TriviadorOntology#"
+     xml:base="http://www.semanticweb.org/aptitude/ontologies/2021/0/TriviadorOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:aptitude="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasPlayer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasPlayer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isPlayerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasQuestion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasQuestion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isQuestionOF"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Question"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasWinner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasWinner">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isWinnerOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isPlayerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isPlayerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isQuestionOF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isQuestionOF">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Question"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isWinnerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isWinnerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gold -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gold">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Jokers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Jokers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Human"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Points -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Points">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Territories -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Territories">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#TotalGamesPlayed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#TotalGamesPlayed">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Victories -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Victories">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Bot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Bot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Friendly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Friendly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasPlayer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasWinner"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Territories"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">15</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Guess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Guess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Question"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Multiple-choice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#isPlayerOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Long -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Long">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasPlayer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasWinner"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Territories"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">15</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Multiple-choice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Multiple-choice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Question"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Non-substitution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Non-substitution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Bot"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Substitution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Normal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Normal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasPlayer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#hasWinner"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Territories"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">15</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Question -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Question">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Substitution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Substitution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Bot"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Bobby -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Bobby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Human"/>
+        <aptitude:isPlayerOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game1"/>
+        <aptitude:isWinnerOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game1"/>
+        <aptitude:Gold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</aptitude:Gold>
+        <aptitude:Jokers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</aptitude:Jokers>
+        <aptitude:TotalGamesPlayed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</aptitude:TotalGamesPlayed>
+        <aptitude:Victories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</aptitude:Victories>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Emil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Emil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Human"/>
+        <aptitude:isPlayerOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game3"/>
+        <aptitude:Gold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000</aptitude:Gold>
+        <aptitude:Jokers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</aptitude:Jokers>
+        <aptitude:TotalGamesPlayed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</aptitude:TotalGamesPlayed>
+        <aptitude:Victories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</aptitude:Victories>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Frederick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Frederick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Human"/>
+        <aptitude:isPlayerOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game2"/>
+        <aptitude:Gold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000</aptitude:Gold>
+        <aptitude:Jokers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</aptitude:Jokers>
+        <aptitude:Points rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</aptitude:Points>
+        <aptitude:TotalGamesPlayed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</aptitude:TotalGamesPlayed>
+        <aptitude:Victories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</aptitude:Victories>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Normal"/>
+        <aptitude:hasPlayer rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Bobby"/>
+        <aptitude:hasPlayer rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Josephe"/>
+        <aptitude:hasPlayer rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#robot1"/>
+        <aptitude:hasWinner rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Bobby"/>
+        <aptitude:Territories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</aptitude:Territories>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Friendly"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype"/>
+        <aptitude:hasPlayer rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Frederick"/>
+        <aptitude:hasPlayer rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Klaudie"/>
+        <aptitude:hasPlayer rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Michaela"/>
+        <aptitude:Territories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</aptitude:Territories>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Gametype"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Long"/>
+        <aptitude:hasPlayer rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Emil"/>
+        <aptitude:hasPlayer rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Justin"/>
+        <aptitude:hasPlayer rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#robot2"/>
+        <aptitude:hasWinner rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Justin"/>
+        <aptitude:Territories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</aptitude:Territories>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Josephe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Josephe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Human"/>
+        <aptitude:isPlayerOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game1"/>
+        <aptitude:Gold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</aptitude:Gold>
+        <aptitude:Jokers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</aptitude:Jokers>
+        <aptitude:TotalGamesPlayed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</aptitude:TotalGamesPlayed>
+        <aptitude:Victories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</aptitude:Victories>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Justin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Justin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Human"/>
+        <aptitude:isPlayerOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game3"/>
+        <aptitude:isWinnerOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game3"/>
+        <aptitude:Gold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5000</aptitude:Gold>
+        <aptitude:Jokers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</aptitude:Jokers>
+        <aptitude:TotalGamesPlayed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</aptitude:TotalGamesPlayed>
+        <aptitude:Victories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</aptitude:Victories>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Klaudie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Klaudie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Human"/>
+        <aptitude:isPlayerOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game2"/>
+        <aptitude:Gold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</aptitude:Gold>
+        <aptitude:Jokers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</aptitude:Jokers>
+        <aptitude:Points rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400</aptitude:Points>
+        <aptitude:TotalGamesPlayed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</aptitude:TotalGamesPlayed>
+        <aptitude:Victories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</aptitude:Victories>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Michaela -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Michaela">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Human"/>
+        <aptitude:isPlayerOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game2"/>
+        <aptitude:Gold rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</aptitude:Gold>
+        <aptitude:Jokers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</aptitude:Jokers>
+        <aptitude:Points rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</aptitude:Points>
+        <aptitude:TotalGamesPlayed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</aptitude:TotalGamesPlayed>
+        <aptitude:Victories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</aptitude:Victories>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#robot1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#robot1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Non-substitution"/>
+        <aptitude:isPlayerOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#robot2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#robot2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Substitution"/>
+        <aptitude:isPlayerOf rdf:resource="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Game3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Friendly"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Long"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aptitude/ontologies/2021/0/aptitude#Normal"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
